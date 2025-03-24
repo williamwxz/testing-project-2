@@ -18,7 +18,7 @@ cloudinary.config({
 });
 
 const server = app.listen(PORT, () => {
-  console.log(`Express server running on http://localhost:${PORT}`);
+  console.log(`Server running`);
 });
 
 // Unhandled Promise Rejection
