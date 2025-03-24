@@ -28,6 +28,8 @@ CONTRACT_ADDRESS=deployed_contract_address
 
 # For Sepolia testnet
 # ETHEREUM_NETWORK=https://ethereum-sepolia-rpc.publicnode.com
+# PRIVATE_KEY=your_private_key_here
+# CONTRACT_ADDRESS=deployed_contract_address
 ```
 
 ## Smart Contract Deployment
@@ -51,20 +53,19 @@ npx hardhat run scripts/deploy.js --network localhost
 
 ### Sepolia Testnet Deployment
 
-1. Update `.env` file with Sepolia configuration:
-```env
-ETHEREUM_NETWORK=https://ethereum-sepolia-rpc.publicnode.com
-PRIVATE_KEY=your_wallet_private_key
-```
-
-2. Deploy to Sepolia:
+1. Deploy to Sepolia:
 ```bash
 npx hardhat run scripts/deploy.js --network sepolia
 ```
 
-3. Save the deployed contract address in your `.env` file:
+2. Save the deployed contract address in your `.env` file:
 ```env
 CONTRACT_ADDRESS=deployed_contract_address
+```
+
+3. (Optional) For demo purpose, a contract has been deployed 
+```
+CONTRACT_ADDRESS=0xA01055BEcB69DE24CE16E5F134ADaf8c4269ED8D
 ```
 
 ## Running Tests
